@@ -31,6 +31,9 @@ get contact(){
 set contact(value){
     this[_contact] =value;
 }
+tostring(){
+    return `${this[_id]}-${this[_name]}`
+}
 }
 
 module.exports = Person;
